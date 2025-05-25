@@ -12,7 +12,7 @@ const { faq } = Astro.props;
 ---
 
 <div class="container mx-auto">
-  <h2>{faq.question}</h2>
+  <h2 class="text-2xl font-semibold">{faq.question}</h2>
   <p>{faq.answer}</p>
   <ul>
     {faq.steps.map((step) => <li>{step}</li>)}
