@@ -1,10 +1,13 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import AppHeader from "@/components/AppHeader.astro";
+import AppFAQList from "@/components/AppFAQList.astro";
 ---
 
 <MainLayout
   title="devChallenges | Simple FAQ"
   description="A simple FAQ challenge from devChallenges."
 >
-  <!-- Begin your journey with Astro and Tailwind CSS by completing this simple FAQ challenge. The goal is to create a responsive FAQ page using the provided design. You can find the design files in the `design` folder. The challenge is to implement the design using Astro and Tailwind CSS, ensuring that the page is fully responsive and looks great on all devices. -->
+  <AppHeader />
+  <AppFAQList />
 </MainLayout>
