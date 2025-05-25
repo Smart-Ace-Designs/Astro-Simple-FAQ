@@ -1,14 +1,21 @@
 ---
 interface Props {
-  question?: string;
-  answer?: string;
+  faq: {
+    question: string;
+    answer: string;
+    steps: string[];
+    additionalInfo: string;
+  };
 }
 
-const { question, answer } = Astro.props;
+const { faq } = Astro.props;
 ---
 
 <div class="container mx-auto">
-  <h2>{question}</h2>
-  <p>{answer}</p>
-  <slot />
+  <h2>{faq.question}</h2>
+  <p>{faq.answer}</p>
+  <ul>
+    {faq.steps.map((step) => <li>{step}</li>)}
+  </ul>
+  <p>{faq.additionalInfo}</p>
 </div>

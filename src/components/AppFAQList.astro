@@ -4,16 +4,5 @@ import faqData from "@/data/faq.json";
 ---
 
 <div class="bg-theme-light-gray flex-1">
-  {
-    faqData.map((faq) => (
-      <AppFAQItem question={faq.question} answer={faq.answer}>
-        <ul>
-          {faq.steps.map((step) => (
-            <li>{step}</li>
-          ))}
-        </ul>
-        <p>{faq.additionalInfo}</p>
-      </AppFAQItem>
-    ))
-  }
+  {faqData.map((faq) => <AppFAQItem faq={faq} />)}
 </div>
