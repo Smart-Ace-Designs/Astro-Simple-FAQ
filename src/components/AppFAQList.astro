@@ -3,29 +3,40 @@ import AppFAQItem from "@/components/AppFAQItem.astro";
 ---
 
 <div class="bg-theme-light-gray flex-1">
-  <AppFAQItem
-    question="How can I track my order?"
-    answer="You can track your order using the following steps:"
-  >
-    <ul>
-      <li>Go to the Order Tracking page.</li>
-      <li>Enter your order number and email address.</li>
-      <li>Click on the Track Order button to view the current status of your shipment.</li>
-    </ul>
-    <p>If you encounter any issues, please visit our Help Center.</p>
-  </AppFAQItem>
-  <AppFAQItem
-    question="How can I track my order?"
-    answer="We offer a 30-day return policy on most items. Here are some key points:"
-  >
-    <ul>
-      <li>Items must be in original condition: Unworn, unused, and unwashed.</li>
-      <li>
-        Include original packaging and tags: All items should be returned with their original
-        packaging and tags.
-      </li>
-      <li>Proof of purchase: A receipt or proof of purchase is required.</li>
-    </ul>
-    <p>For more information, please refer to our Return Policy page.</p>
-  </AppFAQItem>
+  <div class="mx-auto flex max-w-3xl flex-col gap-6 pt-12">
+    <AppFAQItem
+      question="How can I track my order?"
+      answer="You can track your order using the following steps:"
+    >
+      <ol class="flex list-decimal flex-col gap-2">
+        <li>Go to the Order <a href="/" class="text-theme-blue">Tracking page</a>.</li>
+        <li>Enter your order number and email address.</li>
+        <li>Click on the Track Order button to view the current status of your shipment.</li>
+      </ol>
+      <p>
+        If you encounter any issues, please visit our <a href="/" class="text-theme-blue"
+          >Help Center</a
+        >.
+      </p>
+    </AppFAQItem>
+    <hr class="text-theme-gray" />
+    <AppFAQItem
+      question="What is your return policy?"
+      answer="We offer a 30-day return policy on most items. Here are some key points:"
+    >
+      <ul class="flex list-disc flex-col gap-2">
+        <li>Items must be in original condition: Unworn, unused, and unwashed.</li>
+        <li>
+          Include original packaging and tags: All items should be returned with their original
+          packaging and tags.
+        </li>
+        <li>Proof of purchase: A receipt or proof of purchase is required.</li>
+      </ul>
+      <p>
+        For more detailed information, read our full <a href="/" class="text-theme-blue"
+          >Return Policy</a
+        >.
+      </p>
+    </AppFAQItem>
+  </div>
 </div>
