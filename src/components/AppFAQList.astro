@@ -1,16 +1,19 @@
----
-import AppFAQItem from "@/components/AppFAQItem.astro";
----
-
 <div class="bg-theme-light-gray flex-1">
   <section class="mx-auto flex max-w-[640px] flex-col gap-y-10 px-8 pt-17 sm:px-0 sm:pl-5">
-    <AppFAQItem
-      question="How can I track my order?"
-      answer="You can track your order using the following steps:"
-    >
-      <ol class="mb-6 flex list-decimal flex-col px-6">
+    <article role="region" aria-labelledby="order-track-question">
+      <h2
+        aria-describedby="track-order"
+        id="order-track-question"
+        class="mb-6 text-2xl font-semibold"
+      >
+        How can I track my order?
+      </h2>
+      <p id="track-order" class="mb-6">You can track your order using the following steps:</p>
+      <ol role="list" aria-labelledby="track-order" class="mb-6 flex list-decimal flex-col px-6">
         <li class="leading-8">
-          Go to the Order <a href="/" class="text-theme-blue">Tracking page</a>.
+          Go to the Order <a href="/" class="text-theme-blue" aria-label="Go to Order Tracking page"
+            >Tracking page</a
+          >.
         </li>
         <li class="leading-8">Enter your order number and email address.</li>
         <li class="leading-8">
@@ -18,17 +21,28 @@ import AppFAQItem from "@/components/AppFAQItem.astro";
         </li>
       </ol>
       <p class="leading-5">
-        If you encounter any issues, please visit our <a href="/" class="text-theme-blue"
-          >Help Center</a
+        If you encounter any issues, please visit our <a
+          href="/"
+          class="text-theme-blue"
+          aria-label="Go to Help Center page">Help Center</a
         >.
       </p>
-    </AppFAQItem>
+    </article>
+
     <hr class="text-theme-gray" />
-    <AppFAQItem
-      question="What is your return policy?"
-      answer="We offer a 30-day return policy on most items. Here are some key points:"
-    >
-      <ul class="mb-6 flex list-disc flex-col px-6">
+
+    <article role="region" aria-labelledby="return-policy-question">
+      <h2
+        aria-describedby="return-policy"
+        id="return-policy-question"
+        class="mb-6 text-2xl font-semibold"
+      >
+        What is your return policy?
+      </h2>
+      <p id="return-policy" class="mb-6">
+        We offer a 30-day return policy on most items. Here are some key points:
+      </p>
+      <ul role="list" aria-labelledby="return-policy" class="mb-6 flex list-disc flex-col px-6">
         <li class="leading-8">
           <span class="font-semibold">Items must be in original condition</span>: Unworn, unused,
           and unwashed.
@@ -43,10 +57,12 @@ import AppFAQItem from "@/components/AppFAQItem.astro";
         </li>
       </ul>
       <p class="leading-5">
-        For more detailed information, read our full <a href="/" class="text-theme-blue"
-          >Return Policy</a
+        For more detailed information, read our full <a
+          href="/"
+          class="text-theme-blue"
+          aria-label="Go to Return Policy page">Return Policy</a
         >.
       </p>
-    </AppFAQItem>
+    </article>
   </section>
 </div>
