@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Simple FAQ built with Astro and Tailwind | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/simple-faq-challenge" target="_blank">Simple FAQ</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://smartacedesigns-astro-simple-faq.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/Smart-Ace-Designs/Astro-Simple-FAQ">
       Solution
     </a>
     <span> | </span>
@@ -49,6 +49,8 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### What I learned
 
+Don't be affraid to start over with a different design. I originally tried to make this solution very "component" focused. However the differences between the two FAQ items and the embedded links and formatting make this difficult. I ended up re-doing some of the code with a more monolithic approach.
+
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
 ### Useful resources
@@ -58,29 +60,33 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 -->
 
+Nothing at this time.
+
 ### Built with
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
+- [Astro](https://astro.build/)
 - [Tailwind](https://tailwindcss.com/)
+- Astro [Space](https://github.com/Smart-Ace-Designs/Astro-Space) Template
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge. It utilizes:
+
+- Astro
+- Tailwind CSS
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
+Nothing at this time.
+
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+GitHub: [@smart-ace-designs](https://github.com/Smart-Ace-Designs)
