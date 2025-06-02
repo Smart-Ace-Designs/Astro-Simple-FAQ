@@ -49,7 +49,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### What I learned
 
-Don't be affraid to start over with a different design. I originally tried to make this solution very "component" focused. However the differences between the two FAQ items and the embedded links and formatting make this difficult. I ended up re-doing some of the code with a more monolithic approach.
+Don't be affraid to start over with a different design if what you are trying is not working.
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
