@@ -1,5 +1,5 @@
 <div class="flex-1 bg-theme-light-gray">
-  <section class="mx-auto flex max-w-[640px] flex-col gap-y-10 px-8 pt-17 sm:px-0 sm:pl-5">
+  <section class="mx-auto flex max-w-160 flex-col gap-y-10 px-8 pt-17 sm:px-0 sm:pl-5">
     <article role="region" aria-labelledby="order-track-question">
       <h2
         aria-describedby="track-order"
@@ -11,8 +11,10 @@
       <p id="track-order" class="mb-6">You can track your order using the following steps:</p>
       <ol role="list" aria-labelledby="track-order" class="mb-6 flex list-decimal flex-col px-6">
         <li class="leading-8">
-          Go to the Order <a href="/" class="text-theme-blue" aria-label="Go to Order Tracking page"
-            >Tracking page</a
+          Go to the Order <a
+            href={import.meta.env.BASE_URL}
+            class="text-theme-blue"
+            aria-label="Go to Order Tracking page">Tracking page</a
           >.
         </li>
         <li class="leading-8">Enter your order number and email address.</li>
@@ -22,7 +24,7 @@
       </ol>
       <p class="leading-5">
         If you encounter any issues, please visit our <a
-          href="/"
+          href={import.meta.env.BASE_URL}
           class="text-theme-blue"
           aria-label="Go to Help Center page">Help Center</a
         >.
@@ -58,7 +60,7 @@
       </ul>
       <p class="leading-5">
         For more detailed information, read our full <a
-          href="/"
+          href={import.meta.env.BASE_URL}
           class="text-theme-blue"
           aria-label="Go to Return Policy page">Return Policy</a
         >.
